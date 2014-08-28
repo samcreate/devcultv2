@@ -1,0 +1,140 @@
+header{
+        position:fixed
+        display:block
+        height:76px
+        background:#161616
+        width:100%
+        border: none
+        z-index: 9999
+
+        nav{
+            border:none;
+            .navbar-brand{
+                margin: 14px 0 0 0 
+                color:#2c2c2c
+                font-family:bitterregular
+            }
+        }
+        
+        
+        h1 {
+            image:'../images/logo.mini.png' 66px 49px
+            width: 66px
+            height: 49px
+            margin: 15px 10px;
+        }
+    
+        ul#menu{
+            font-family: 'league_gothicregular';
+            clear:left;
+            float:left;
+            list-style:none;
+            margin:0;
+            padding:0;
+            position:relative;
+            left:50%;
+            text-align:center;
+            
+            .mobile & {
+                left: initial;
+                right: initial;
+                display:block;
+                width:100%;
+                left: 50%;
+                margin-top: 10px
+            }
+
+            .decore{
+                width:51px
+                height:18px
+                margin: 30px 20px;
+            }
+            .ldecor{
+                image: '../images/left.decor.png' 51px 18px
+
+                .mobile & {
+                    display:none;
+                }
+                
+            }
+            .rdecor{
+                image: '../images/right.decor.png' 51px 18px
+
+                .mobile & {
+                    display:none;
+                }
+            }
+            .item{
+                
+                padding:15px 0px 0px 0px;
+                a{
+                    padding:15px 15px 10px 15px
+                    width:95%
+                }
+
+                .mobile & {
+                    display: inline;
+                    clear: both;
+                    
+                    width:100%;
+                    text-align:left;
+                    padding:0;
+
+
+                    a {
+                        padding: 5px 0 0 0;
+                        padding: 10px 0 10px 15px;
+                        background: #161616
+                        border-top: 1px solid #1d1d1d;
+                        border-radius 0px
+                        width:100%;
+
+                    }
+                }
+
+            }
+            .brand{
+                padding-top:0px
+
+                .mobile & {
+                    display:none;
+                }
+            }
+            li {
+                display:block;
+                float:left;
+                position:relative;
+                right:50%;
+                &.active{
+                    a{
+                        background:#2c2c2c
+                       
+                    }
+                }
+                a{
+                    border-radius 5px
+                    color: #fff;
+                    font-size: 19px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    background:none
+                    transition: background .45s ease-in-out;
+                    line-height: 20px;
+                    position: relative;
+                    display: block;
+                    text-decoration: none;
+                    
+    
+                    
+                }
+                .hover &:not(.active)>a:hover{
+                    background:#2c2c2c
+
+                }
+
+                .mobile & {
+                    display:inline;
+                }
+            }
+        }
+    }

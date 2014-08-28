@@ -1,0 +1,55 @@
+@import 'jeet'
+@import 'nib'
+@import 'nib/gradients'
+@import 'fonts.styl'
+@import 'animations.styl'
+@import 'doormat.styl'
+@import 'globals.styl'
+
+/*  Syntax Quick Reference
+  --------------------------
+  column(ratios = 1, offset = 0, cycle = 0, uncycle = 0)
+  span(ratio = 1, offset = 0)
+  shift(ratios = 0, col_or_span = column)
+  unshift()
+  edit()
+  center(max_width = 1410px, pad = 0)
+  stack(pad = 0, align = false)
+  unstack()
+  align(direction = both)
+  cf()
+
+*/
+// edit();
+
+
+
+default_bg = #1d1d1d;
+default_font = bitterregular;
+default_font_size = 16px;
+default_color = #969696;
+
+
+body,html{
+	width: 100%;
+    height: 100%;
+}
+
+body{
+	font-family: default_font, sans-serif;
+  	font-weight: normal
+  	-webkit-font-smoothing: antialiased
+  	center(100%);
+  	a{color: default_color;}
+  	background: default_bg;
+  	color: default_color;
+  	font-size: default_font_size;
+}
+
+@import 'header.styl';
+
+@import 'sections.styl';
+
+p,h1,h2,h3,h4,h5,h6,span{
+	font-size:default_font_size;
+}
