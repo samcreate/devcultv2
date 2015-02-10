@@ -5,8 +5,8 @@
 var express  = require('express'),
     path     = require('path'),
     config   = require('./config'),
-    routes   = require('./routes');
-
+    routes   = require('./routes'),
+    winston  = require('winston');
 
 
 var app = express();
@@ -15,6 +15,8 @@ app.locals({
   dev: app.get('env') === 'development',
   pretty: config.htmlPretty
 });
+
+
 
 /**
  * Express configuration.

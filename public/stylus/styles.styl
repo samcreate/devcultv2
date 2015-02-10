@@ -5,6 +5,7 @@
 @import 'animations.styl'
 @import 'doormat.styl'
 @import 'globals.styl'
+@import 'reset.styl'
 
 /*  Syntax Quick Reference
   --------------------------
@@ -22,16 +23,14 @@
 */
 // edit();
 
-
-
 default_bg = #1d1d1d;
 default_font = bitterregular;
 default_font_size = 16px;
 default_color = #969696;
-
+default_min_width = 960px;
 
 body,html{
-	width: 100%;
+	  width: 100%;
     height: 100%;
 }
 
@@ -39,7 +38,6 @@ body{
 	font-family: default_font, sans-serif;
   	font-weight: normal
   	-webkit-font-smoothing: antialiased
-  	center(100%);
   	a{color: default_color;}
   	background: default_bg;
   	color: default_color;

@@ -10,7 +10,7 @@
   "indent": 2,
   "latedef": true,
   "newcap": true,
-  "noarg": true,
+  "noarg": false,
   "quotmark": "single",
   "regexp": true,
   "undef": true,
@@ -18,9 +18,15 @@
   "trailing": true,
   "smarttabs": true,
   "white": false,
+  "laxcomma": true,
+  "camelcase": false,
+  "unused":false,
+  "indent":false,
+  "devel":true,
   "globals": {
     "jQuery": true,
     "requirejs": true,
+    "define": true,
     "debug":true
   }
 }

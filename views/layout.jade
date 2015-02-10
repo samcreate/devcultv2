@@ -4,15 +4,26 @@ html
     title= title
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
-    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    //- link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/css/styles.min.css')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, minimal-ui")
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    link(rel="apple-touch-icon" href="/assets/icon.png")
+    link(rel="apple-touch-icon" sizes="72x72" href="/assets/icon.png")
+    link(rel="apple-touch-icon" sizes="114x114" href="/assets/icon.png")
+    meta(property="og:title" content="Burn calories, give calories.")
+    meta(property="og:image" content="#{origin}/assets/facebook-share.png")
+    meta(property="og:site_name" content="FitForFood")
+    meta(property="og:description" content="Want to help feed people in need? It’s simple—join FitForFood and make your active calories count for good.")
+    meta(property="og:url" content="https://fitforfood.fitbit.com")
+    meta(property="description" content="Want to help feed people in need? It’s simple—join FitForFood and make your active calories count for good.")
+    meta(property="author" content="Aaron McGuire")
+    link(rel='stylesheet', href='/css/styles.css')
   body
     .container
       header
         nav.navbar(role='navigation')
           ul#menu.nav.navbar-nav
-            li.ldecor.decore.ir ~
+            li.ldecor.decore 
+              span.ir ~
             li.home.item.active
               a.curtain-links(href='#home') Home
             li.about.item
@@ -28,7 +39,8 @@ html
               a(href='/blog') Blog
             li.summon.item
               a.curtain-links(href='#join') Join
-            li.rdecor.decore.ir ~
+            li.rdecor.decore 
+              span.ir ~
       block content
     if dev
       script(src='http://localhost:3006/livereload.js')

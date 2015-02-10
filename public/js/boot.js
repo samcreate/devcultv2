@@ -23,8 +23,9 @@ function ($,Doormat) {
 
 	$(document).ready(function () {
 		
-		var myMultDoormat = new Doormat(document.getElementsByTagName('ol')[0], true);
-		debug.log('APP READY',myMultDoormat);
+		// var myMultDoormat = new Doormat(document.getElementsByTagName('ol')[0], true);
+		// debug.log('APP READY',myMultDoormat);
+		debug.log('APP READY');
 	});
 
 });

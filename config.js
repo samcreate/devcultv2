@@ -1,4 +1,10 @@
 var config = {
+  local: {
+    server: {
+      port: 3002
+    },
+    htmlPretty: true
+  },
   development: {
     server: {
       port: 3000
